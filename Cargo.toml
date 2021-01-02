@@ -14,11 +14,10 @@ version = "0.1.2"
 [dependencies]
 once_cell = "1.5"
 pin-project-lite = "0.2"
-tokio_02 = {version = "0.2.22", package = "tokio", features = ["rt-threaded"]}
-tokio = "1"
-tokio-stream = "0.1"
+tokio_02 = { version = "0.2.21", package = "tokio", features = ["rt-threaded"] }
+tokio = "0.3.6"
 bytes = "0.5.6"
 
 [dev-dependencies]
 hyper = "0.13"
-tokio = {version = "1", features = ["full"]}
+tokio = { version = "0.3.6", features = ["full"] }

@@ -11,8 +11,8 @@ use tokio::io::{
 use tokio_02::{
     io::{AsyncBufRead as AsyncBufRead02, AsyncRead as AsyncRead02, AsyncWrite as AsyncWrite02},
     runtime::Handle,
+    stream::Stream,
 };
-use tokio_stream::Stream;
 
 pin_project! {
     /// `IoCompat` allows conversion between the 0.2 and 1.0 IO traits.
